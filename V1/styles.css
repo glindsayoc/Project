@@ -1,0 +1,106 @@
+
+@charset "utf-8";
+/*
+@font-face {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+ src: url() format(''),
+ url() format('');
+}
+*/
+
+/*
+CIS 155 Web Dev 1
+Author: Gordon Lindsay
+Date:   5/2/2020
+Filename: styles.css
+*/
+
+
+/* Structural Styles */
+html {
+  background-color: rgb(42, 42, 42);
+}
+
+body {
+  background-color: rgb(44, 41, 70);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: #000000;
+}
+
+footer {
+    color: gold;
+    background-color: rgb(47, 65, 52);
+}
+
+address {
+    color: gold;
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation Styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li > a {
+    display: block;
+    color: #e9c650;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+  }
+  
+  /* 
+   */
+
+
+li a:hover {
+    background-color: #444444;
+  }
+
+
+/*  */
+h1{
+    font-size: 2em;
+    font-weight: normal;
+    color: silver;
+    margin: 0px;
+    padding-top: 15px, 10px, 15px;
+}
+
+p{
+    color: silver;
+    margin: 0px;
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+
+
+/* Definition List Styles */
+dt{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.4);
+}
+dd{
+  font-size: 1.3em;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
