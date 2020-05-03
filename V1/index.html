@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, 
     describing how the file it is in meets this outcome) -->
-<html lang="en">
+
+    <html lang="en">
 
     <head>
 
@@ -15,10 +16,11 @@
 
         <meta charset="UTF-8"/>
         <title>Gordon's Gallery</title>
+
         <!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) -->
         <link href="styles.css" rel="stylesheet" />
-        <!-- M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times,
-             once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles) 
+        
+        <!-- M2LO4 Demonstrate external, embedded, and inline styles: embedded
             (not finished) -->
 
 
@@ -41,50 +43,52 @@
                 <li><a href="stone.html">Stone</a></li>
                 <li><a href="metal.html">Metal</a></li>
                 <li><a href="about.html">About</a></li>
+                <id="top" />
             </ul>
         </nav>
 
         <article>
+            <p>
+                <br />
+            </p>
             <h1>
                 Hello, and welcome to my hobby gallery.
             </h1>
 
             <p>
-                This is a place for me to show a few of the things I've made
-                 or am currently in the process of making. I'll be adding more
+                <!-- M2LO4 Demonstrate external, embedded, and inline styles: inline
+                This inline style change alterss the color of this paragraph -->
+                <p style="color: cornflowerblue;">
+                This is a place for me to show a few of the things I've made or
+                 am currently in the process of making. I'll be adding more
                  pictures and descriptions as time goes on, and hopefully another 
-                 category or two.
+                 category or two. Most of my hobbies represent the fun part of jobs
+                 I've had over the years, and while I'm no longer making a living 
+                 from these crafts, I do still occasionally sell things I make.
             </p>
             
             <h1>
-                <!-- M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times,
-                     once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets,
-                      and 2-3c Inline Styles) 
-                    This inline style change changes the color of this paragraph -->
-                <p style="color: cornflowerblue;">
                 Featuring:
             </h1>
 
             <p>
-                
                 <a href="stone.html"><img src="stone.jpg" alt=""></a></li>
                 <a href="metal.html"><img src="metal.jpg" alt=""></a></li>
             </p>
-            <address>
-                
-            </address>
+
         </article>
         
         <footer>
-            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: external -->
-            <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
-            <!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) -->
-            &emsp;
-            <a href="tel:555555555">phone:	555.555.5555</a>
-            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids
-            (not finished) -->
-
-
+            <address>
+                <!-- M1LO13 Demonstrate using 3 types of hyperlinks: external -->
+                <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
+                <!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) -->
+                &emsp; &emsp; &emsp;
+                <a href="tel:555555555">phone:	555.555.5555</a>
+                &emsp; &emsp; &emsp;
+                <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
+                <a href="#top">Click here to return to the top</a>
+            </address>
         </footer>
         
     </body>

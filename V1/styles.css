@@ -1,12 +1,5 @@
 
 @charset "utf-8";
-/*
-@font-face {
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
- src: url() format(''),
- url() format('');
-}
-*/
 
 /*
 CIS 155 Web Dev 1
@@ -17,33 +10,45 @@ Filename: styles.css
 
 
 /* Structural Styles */
+
 html {
-  background-color: rgb(42, 42, 42);
+    /* M2LO3 Demonstrate style precedence and inheritance in CSS: inheritance
+    the new default background color will be inherited */
+    background-color: rgb(42, 42, 42);
 }
 
 body {
-  background-color: rgb(44, 41, 70);
-  font-family: 'Times New Roman', Times, serif;
+    /* M2LO13 Demonstrate how CSS can change presentation of textual elements
+    this changes the font from the browser default */
+    background-color: rgb(67, 66, 82);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
-  background-color: #000000;
+    /* M2LO15 Apply colors using CSS 
+    this applies the color from the image background to the header */
+    background-color: #444444;
 }
 
 footer {
-    color: gold;
-    background-color: rgb(47, 65, 52);
+    /* M2LO5 Demonstrate contextual selectors 
+    this changes background color in a footer element*/
+    background-color: #000000;
 }
 
 address {
     color: gold;
     font-style: normal;
-    font-size: 0.9em;
+    font-size: 1.1em;
     text-align: center;
-    padding: 10px;
+    padding: 9px;
 }
 
 /* Navigation Styles */
+a {
+    color: #5f5123;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -53,16 +58,23 @@ ul {
   }
   
   li {
-    float: left;
+      /* M2LO12 Demonstrate how CSS can change presentation of page elements 
+      this changes the Nav list display from vertical to horizontal */
+      float: left;
   }
   
   li > a {
-    display: block;
-    color: #e9c650;
-    font-size: 1.1em;
-    text-align: center;
-    padding: 10px 25px;
-    text-decoration: none;
+      /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
+      these settings will take precedence over the 'a' color setting */
+      
+      /* M2LO5 Demonstrate contextual selectors
+      parent > child: these settings will apply to 'a' elements within a list */
+      display: block;
+      color: #e9c650;
+      font-size: 1.1em;
+      text-align: center;
+      padding: 10px 25px;
+      text-decoration: none;
   }
   
   /* 
@@ -93,7 +105,7 @@ p{
 
 
 
-/* Definition List Styles */
+/* Definition List Styles
 dt{
   font-size: 1.3em;
   font-weight: bold;
@@ -103,4 +115,4 @@ dd{
   font-size: 1.3em;
   margin-left: 0px;
   margin-bottom: 10px;
-}
+} */
