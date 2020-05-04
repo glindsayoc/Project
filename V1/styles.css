@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /*
@@ -11,28 +10,33 @@ Filename: styles.css
 
 /* Structural Styles */
 
-html {
+html > * {
     /* M2LO3 Demonstrate style precedence and inheritance in CSS: inheritance
-    the new default background color will be inherited */
-    background-color: rgb(42, 42, 42);
+    The new margin value will be inherited by other structural elements*/
+
+    margin: 10px;
 }
 
 body {
     /* M2LO13 Demonstrate how CSS can change presentation of textual elements
-    this changes the font from the browser default */
-    background-color: rgb(67, 66, 82);
+    This changes the font from the browser default */
     font-family: 'Times New Roman', Times, serif;
+
+    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
+    since rgb works on legacy browsers where hsl might not, including it first 
+    ensures compatibility, but if the browser recognizes hsl, it will use that 
+    encoding since it is the last one defined */
+    background-color: rgb(67, 66, 82);
+    background-color: hsl(244, 10.8, 29.0)
 }
 
 header {
     /* M2LO15 Apply colors using CSS 
-    this applies the color from the image background to the header */
+    This applies the color used for the image background to the header */
     background-color: #444444;
 }
 
 footer {
-    /* M2LO5 Demonstrate contextual selectors 
-    this changes background color in a footer element*/
     background-color: #000000;
 }
 
@@ -45,74 +49,63 @@ address {
 }
 
 /* Navigation Styles */
-a {
-    color: #5f5123;
-}
+
+
+ol {
+    list-style-type: decimal;
+    color: silver;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #082e1c; 
+  }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     background-color: #000000;
   }
   
-  li {
+  /* M2LO5 Demonstrate contextual selectors (x1)
+  Parent descendant: this list elements anywhere within an unordered list*/
+ ul li {
       /* M2LO12 Demonstrate how CSS can change presentation of page elements 
-      this changes the Nav list display from vertical to horizontal */
+      This changes the Nav list display from vertical to horizontal */
       float: left;
+    }
+  
+  a {
+    color: #5f5123;
   }
   
+  /* M2LO5 Demonstrate contextual selectors (x2)
+  Parent > child: these settings will apply to 'a' elements directly within a list */
   li > a {
       /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
-      these settings will take precedence over the 'a' color setting */
-      
-      /* M2LO5 Demonstrate contextual selectors
-      parent > child: these settings will apply to 'a' elements within a list */
+      These settings will take precedence over the 'a' setting */
       display: block;
       color: #e9c650;
       font-size: 1.1em;
       text-align: center;
       padding: 10px 25px;
       text-decoration: none;
-  }
+    }
   
-  /* 
-   */
-
-
-li a:hover {
-    background-color: #444444;
-  }
-
-
-/*  */
-h1{
-    font-size: 2em;
-    font-weight: normal;
+  li a:hover {
+      background-color: #444444;
+    }
+  
+  h1{
+      font-size: 2em;
+      font-weight: normal;
+      color: silver;
+      padding: 15px 0px 0px 10px;
+    }
+    
+    p {
     color: silver;
-    margin: 0px;
-    padding-top: 15px, 10px, 15px;
-}
-
-p{
-    color: silver;
-    margin: 0px;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.3em;
-    text-align: left;
+    text-align: left
 }
 
-
-
-/* Definition List Styles
-dt{
-  font-size: 1.3em;
-  font-weight: bold;
-  color: hsla(0, 0%, 0%, 0.4);
-}
-dd{
-  font-size: 1.3em;
-  margin-left: 0px;
-  margin-bottom: 10px;
-} */
