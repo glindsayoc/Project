@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/*
+CIS 155 Web Dev 1  
+Project V1
+Author: Gordon Lindsay
+Date:   5/2/2020
+Filename: styles.css
+*/
+
+
+/* Structural Styles */
+
+html > * {
+    /* M2LO3 Demonstrate style precedence and inheritance in CSS: inheritance
+    The new margin value will be inherited by other structural elements*/
+    margin: 10px;
+}
+
+body {
+    /* M2LO13 Demonstrate how CSS can change presentation of textual elements
+    This changes the font from the browser default */
+    font-family: 'Times New Roman', Times, serif;
+
+    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
+    since rgb works on legacy browsers where hsl might not, including it first 
+    ensures compatibility, but if the browser recognizes hsl, it will use that 
+    encoding since it is the last one defined */
+    background-color: rgb(67, 66, 82);
+    background-color: hsl(244, 10.8, 29.0)
+}
+
+header {
+    /* M2LO15 Apply colors using CSS 
+    This applies the color used for the image background to the header */
+    background-color: #444444;
+}
+
+footer {
+    background-color: #000000;
+}
+
+address {
+    color: gold;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 9px;
+}
+
+/* Navigation Styles */
+
+ol {
+    list-style-type: decimal;
+    color: silver;
+    padding: 10px;    
+    padding-left: 30px;
+    overflow: hidden;
+    background-color: #082e1c; 
+  }
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  /* M2LO5 Demonstrate contextual selectors (x1)
+  Parent descendant: this list elements anywhere within an unordered list*/
+ ul li {
+      /* M2LO12 Demonstrate how CSS can change presentation of page elements 
+      This changes the Nav list display from vertical to horizontal */
+      float: left;
+    }
+  
+  /* M2LO5 Demonstrate contextual selectors (x2)
+  Parent > child: these settings will apply to 'a' elements directly within a list */
+  li > a {
+      /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
+      This color setting will take precedence over the 'a' setting */
+      display: block;
+      color: #e9c650;
+      font-size: 1.1em;
+      text-align: center;
+      padding: 10px 25px;
+      text-decoration: none;
+    }
+  
+  /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-class */
+  li a:hover {
+      background-color: #444444;
+    }
+    
+  a {
+    color: #5f5123;
+  }
+
+  /* M2LO7 Demonstrate a CSS attribute selector other than class or id  */
+  a[href$=".html"] {
+    margin-left: 17px;
+    border-style: solid;
+    border-width: 3px;
+  }  
+
+  /*  */
+  
+  h1 {
+      font-size: 2em;
+      font-weight: normal;
+      color: silver;
+      padding: 15px 0px 0px 10px;
+    }
+    
+    p {
+    color: silver;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: left
+    }
+
+    blockquote {
+      color: cornflowerblue;
+      font-size: 1.2em;
+    }
+
+    /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-element */
+    blockquote::first-letter {
+      font-size: 1.6em;
+    }
+
+    /* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
+    h1.clh {
+      color: #000;
+      text-align: center;
+    }
+
+    /* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
+    #aboutTitle {
+      color: black;
+      padding: 10px;
+      text-align: center;
+    }
