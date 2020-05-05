@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, 
-    describing how the file it is in meets this outcome) -->
 
-    <html lang="en">
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page 
+(The tags in this file are basic, and the page is very simple in scope) -->
+
+<html lang="en">
 
     <head>
 
@@ -17,60 +18,53 @@
         <meta charset="UTF-8"/>
         <title>Gordon's Gallery</title>
 
-        <!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) -->
+        <!-- M1LO8 Demonstrate the use of external style sheets -->
         <link href="styles.css" rel="stylesheet" />
 
     </head>
 
+
     <body>
 
-        <!--  -->
         <header>
-                <!-- M1LO9 Demonstrate the use of inline images (HTML) -->
-                <img src="gg_title_image.jpg" alt="Gordon's Gallery"/>
+            <!-- M1LO9 Demonstrate the use of inline images (HTML) -->
+            <img src="gg_title_image.jpg" alt="Gordon's Gallery"/>
         </header>
 
         <nav>
             <!-- M1LO12 Create navigation using unordered lists (HTML) -->
             <ul>
-
                 <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="stone.html">Stone</a></li>
                 <li><a href="metal.html">Metal</a></li>
                 <li><a href="about.html">About</a></li>
-
             </ul>
         </nav>
 
         <article>
-           <!-- <p>
-                <br />
-            </p> -->
-                            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
+
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
             <h1 id="top">
                 Hello, and welcome to my hobby gallery.
             </h1>
 
-            <p>
-                <!-- M2LO4 Demonstrate external, embedded, and inline styles: inline
-                This inline style change alterss the color of this paragraph -->
-                <p style="color: cornflowerblue;">
+            <blockquote>
                 This is a place for me to show a few of the things I've made or
                  am currently in the process of making. I'll be adding more
                  pictures and descriptions as time goes on, and hopefully another 
                  category or two. Most of my hobbies represent the fun part of jobs
                  I've had over the years, and while I'm no longer making a living 
                  from these crafts, I do still occasionally sell things I make.
-            </p>
+            </blockquote>
             
             <h1>
                 Featuring:
             </h1>
 
             <p>
-                <a href="stone.html"><img src="stone.jpg" alt=""></a>
-                <a href="metal.html"><img src="metal.jpg" alt=""></a>
+                <a href="stone.html"><img src="stone.jpg" alt="Stone"></a>
+                <a href="metal.html"><img src="metal.jpg" alt="Metal"></a>
             </p>
 
         </article>
@@ -79,7 +73,7 @@
             <address>
                 <!-- M1LO13 Demonstrate using 3 types of hyperlinks: external -->
                 <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
-                <!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) -->
+                <!-- M1LO10 Demonstrate the use of special characters from extended character sets -->
                 &emsp; &emsp; &emsp;
                 <a href="tel:555555555">phone:	555.555.5555</a>
                 &emsp; &emsp; &emsp;
@@ -89,5 +83,6 @@
         </footer>
         
     </body>
+
 
 </html>

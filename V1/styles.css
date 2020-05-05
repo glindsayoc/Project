@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 /*
-CIS 155 Web Dev 1
+CIS 155 Web Dev 1  
+Project V1
 Author: Gordon Lindsay
 Date:   5/2/2020
 Filename: styles.css
@@ -13,7 +14,6 @@ Filename: styles.css
 html > * {
     /* M2LO3 Demonstrate style precedence and inheritance in CSS: inheritance
     The new margin value will be inherited by other structural elements*/
-
     margin: 10px;
 }
 
@@ -50,11 +50,11 @@ address {
 
 /* Navigation Styles */
 
-
 ol {
     list-style-type: decimal;
     color: silver;
-    padding: 30px;
+    padding: 10px;    
+    padding-left: 30px;
     overflow: hidden;
     background-color: #082e1c; 
   }
@@ -74,15 +74,11 @@ ul {
       float: left;
     }
   
-  a {
-    color: #5f5123;
-  }
-  
   /* M2LO5 Demonstrate contextual selectors (x2)
   Parent > child: these settings will apply to 'a' elements directly within a list */
   li > a {
       /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
-      These settings will take precedence over the 'a' setting */
+      This color setting will take precedence over the 'a' setting */
       display: block;
       color: #e9c650;
       font-size: 1.1em;
@@ -91,11 +87,25 @@ ul {
       text-decoration: none;
     }
   
+  /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-class */
   li a:hover {
       background-color: #444444;
     }
+    
+  a {
+    color: #5f5123;
+  }
+
+  /* M2LO7 Demonstrate a CSS attribute selector other than class or id  */
+  a[href$=".html"] {
+    margin-left: 17px;
+    border-style: solid;
+    border-width: 3px;
+  }  
+
+  /*  */
   
-  h1{
+  h1 {
       font-size: 2em;
       font-weight: normal;
       color: silver;
@@ -107,5 +117,27 @@ ul {
     padding: 10px;
     font-size: 1.3em;
     text-align: left
-}
+    }
 
+    blockquote {
+      color: cornflowerblue;
+      font-size: 1.2em;
+    }
+
+    /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-element */
+    blockquote::first-letter {
+      font-size: 1.6em;
+    }
+
+    /* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
+    h1.clh {
+      color: #000;
+      text-align: center;
+    }
+
+    /* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
+    #aboutTitle {
+      color: black;
+      padding: 10px;
+      text-align: center;
+    }
