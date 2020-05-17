@@ -213,17 +213,17 @@ img:hover {
   left: 280px;
 }
 
+/* M3LO11 Demonstrate -prefix- style browser extensions use in CSS 
+This ensures the transform will work on Safari and Firefox browsers */
 /* M4LO8 Demonstrate the use of transformations for 2D or 3D images:
-This flips along the Y axis, any images I've tagged with id="flipH */
+This flips any images I've tagged with id="flipH, on the Y axis */
 #flipH {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-/* M3LO11 Demonstrate -prefix- style browser extensions use in CSS 
-This ensures the transform will work on Safari and Firefox browsers */
 #rotateLeft {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
   transform: rotate(270deg);
 }
 
@@ -235,7 +235,8 @@ This ensures the transform will work on Safari and Firefox browsers */
 }
 
 #center {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
