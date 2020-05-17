@@ -54,6 +54,9 @@ html {
   background-color: hsl(244, 10.8, 29.0);
   /* M4LO2 Demonstrate the use of background images (CSS) */
   background: url(img/Driftwood2.jpg) 100%/contain fixed;
+      /* M3LO10 Demonstrate an overflow setting:
+    This adds a scrollbar to elements that don't fit their container */
+    overflow: auto;
 }
 
 body {
@@ -62,13 +65,9 @@ body {
     font-family: Harrington;
     src: url(HarringtonPlain001001-vv54.ttf);
     }
-    /* M3LO10 Demonstrate an overflow setting:
-    This adds a scrollbar to elements that don't fit their container */
-    overflow: auto;
-  }
+}
 
 footer {
-
   background-color: #000000;
   font-size: 1em;
   text-align: center;
@@ -78,7 +77,6 @@ footer {
   It has also broken the grid on the footer for now */
   position: fixed;
   bottom: 0;
-
 }
 
 /* Page Header Styles */
