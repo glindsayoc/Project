@@ -180,15 +180,38 @@ blockquote::first-letter {
   font-size: 1.6em;
 }
 
+/* M4LO4 Demonstrate the use of gradients */
+#grad {
+  background-image: linear-gradient(to bottom right, #082e1c, rgb(15, 99, 50));
+}
+
 h2.clh {
   color: #000;
   text-align: center;
 }
 
+figure {
+  border: solid 4px black;
+}
+
+img {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+
+/* M4LO6 Demonstrate the use of opacity/transparency for images */
+img:hover {
+  opacity: 0.5;
+}
+
 #aboutTitle {
   color: black;
   padding: 10px;
-  text-align: center;
+  /* M3LO8A Demonstrate absolute positioning 
+  This allowed me to use the offset to slightly overlap another element */
+  position: absolute;
+  left: 280px;
 }
 
 /* M3LO11 Demonstrate -prefix- style browser extensions use in CSS 
@@ -206,15 +229,14 @@ This flips along the Y axis, any images I've tagged with id="flipH */
 }
 
 /* Grid Styles */
-img {
-  display: block;
-  margin: auto;
-  object-fit: cover;
-}
-
 #right {
   margin-left: auto;
   margin-right: 0;
+  display: block;
+}
+
+#center {
+  margin: auto;
   display: block;
 }
 
