@@ -246,6 +246,10 @@ This flips any images I've tagged with id="flipH, on the Y axis */
   display: block;
 }
 
+.row {
+  clear: both;
+}
+
 /* M3LO3 Demonstrate a clearing floats: 
 This clears floats after the row elements to prevent collapse. */
 .row:after {
