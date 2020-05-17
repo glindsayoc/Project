@@ -73,6 +73,7 @@ footer {
   font-size: 1em;
   text-align: center;
   padding: 6px 0px 9px 0px;
+  width: 100%;
   /* M3LO9 Demonstrate fixed, static, or inherited positioning:
   This keeps the footer at the bottom of the viewport
   It has also broken the grid on the footer for now */
@@ -244,10 +245,6 @@ This flips any images I've tagged with id="flipH, on the Y axis */
   margin-left: 0;
   margin-right: auto;
   display: block;
-}
-
-.row {
-  clear: both;
 }
 
 /* M3LO3 Demonstrate a clearing floats: 
