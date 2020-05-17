@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: Harrington;
+  src: url(HarringtonPlain001001-vv54.ttf);
+}
+
 /*
 CIS 155 Web Dev 1  
 Project V2
@@ -61,10 +66,6 @@ html {
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  @font-face {
-    font-family: Harrington;
-    src: url(HarringtonPlain001001-vv54.ttf);
-    }
 }
 
 footer {
@@ -122,6 +123,7 @@ nav.horizontal ul li {
 nav.horizontal a:link, nav.horizontal a:visited {
   color: rgb(219, 161, 15);
   background-color: black;
+  border: solid 3px black;
 }
 
 nav.horizontal a:hover, nav.horizontal a:active {
