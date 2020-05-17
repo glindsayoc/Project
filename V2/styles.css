@@ -122,7 +122,6 @@ nav.horizontal ul li {
 nav.horizontal a:link, nav.horizontal a:visited {
   color: rgb(219, 161, 15);
   background-color: black;
-  border: solid 3px black;
 }
 
 nav.horizontal a:hover, nav.horizontal a:active {
