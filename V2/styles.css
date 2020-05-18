@@ -70,9 +70,9 @@ body {
 
 footer {
   background-color: #000000;
-  font-size: 1em;
+  font-size: .8em;
   text-align: center;
-  padding: 6px 0px 9px 0px;
+  padding: 3px 0px 3px 0px;
   width: 100%;
   /* M3LO9 Demonstrate fixed, static, or inherited positioning:
   This keeps the footer at the bottom of the viewport
@@ -166,7 +166,7 @@ p {color: silver;
 blockquote {
   color: lightsteelblue;
   font-size: 1.2em;
-  padding: 5px 40px 5px 40px;
+  padding: 5px 20px 5px 20px;
   border: solid 4px rgb(28, 28, 34);
   /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
   border-radius: 16px;
@@ -228,7 +228,6 @@ This flips any images I've tagged with id="flipH, on the Y axis */
   transform: rotate(270deg);
 }
 
-/* Grid Styles */
 #right {
   margin-left: auto;
   margin-right: 0;
@@ -247,6 +246,48 @@ This flips any images I've tagged with id="flipH, on the Y axis */
   display: block;
 }
 
+/* Grid Styles */
+/* M3LO6 Demonstrate formatting a grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px 20px 5px 20px;
+  grid-gap: 20px;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px 20px 5px 20px;
+  grid-gap: 10px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px 20px 5px 20px;
+  grid-gap: 20px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding: 5px 20px 5px 20px;
+  grid-gap: 30px;
+  margin-right: 50px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 0;
+  font-size: 1em;
+}
+
+.grid-item > img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; }
+
 /* M3LO3 Demonstrate a clearing floats: 
 This clears floats after the row elements to prevent collapse. */
 .row:after {
@@ -254,22 +295,3 @@ This clears floats after the row elements to prevent collapse. */
 content: '';
   display: table;
 }
-
-div [class^="col-"] {
-  float: left;
-}
-
-/* M3LO6 Demonstrate formatting a grid:
-These column widths are used along with the rows to create a grid. */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
