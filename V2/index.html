@@ -66,7 +66,11 @@
                 <!-- M4LO1 Demonstrate the use of figure boxes  -->
                 <figure>
                     <a href="stone.html">
-                        <img id="right" src="img/stone.jpg" alt="Stone"></a>
+                        <!-- M4LO7 Demonstrate the use of image maps, including determining x and y values -->
+                        <img id="right" src="img/stone.jpg" alt="Stone" usemap="#wing"></a>
+                        <map name="wing">
+                            <area shape="poly" coords="22,81,96,231,0,231,0,136" alt="Wing" href="wing.html"/>
+                        </map> 
                 </figure>
             </div>
             <div class="grid-item">
@@ -100,5 +104,3 @@
     </body>
 
 </html>
-<!-- I had to move M4OLO7 to the stone.html page where it is documented, 
-    but I failed to include that page in my Project Report-->
