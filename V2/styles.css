@@ -75,8 +75,7 @@ footer {
   padding: 3px 0px 3px 0px;
   width: 100%;
   /* M3LO9 Demonstrate fixed, static, or inherited positioning:
-  This keeps the footer at the bottom of the viewport
-  It has also broken the grid on the footer for now */
+  This keeps the footer at the bottom of the viewport */
   position: fixed;
   bottom: 0;
 }
