@@ -55,16 +55,25 @@ table {
 
 /* Structural Styles */
 html {
+  /* M2LO3 Demonstrate style precedence and inheritance in CSS: inheritance
+  The new margin value will be inherited by other structural elements
+  margin: 10px; */
+  /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
+  since rgb works on legacy browsers where hsl might not, including it first 
+  ensures compatibility, but if the browser recognizes hsl, it will use that 
+  encoding since it is the last one defined */
   background-color: rgb(67, 66, 82); 
   background-color: hsl(244, 10.8, 29.0);
   /* M4LO2 Demonstrate the use of background images (CSS) */
   background: url(img/Driftwood2.jpg) 100%/contain fixed;
-    /* M3LO10 Demonstrate an overflow setting:
-    This adds a scrollbar to elements that don't fit their container */
-    overflow: auto;
+  /* M3LO10 Demonstrate an overflow setting:
+  This adds a scrollbar to elements that don't fit their container */
+  overflow: auto;
 }
 
 body {
+  /* M2LO13 Demonstrate how CSS can change presentation of textual elements
+  This changes the font from the browser default */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -82,6 +91,9 @@ footer {
 
 /* Page Header Styles */
 header {
+  /* M2LO15 Apply colors using CSS 
+  This applies the color used for the image background to the header
+  background-color: #444444; */
   font: 1em Harrington;
 }
 
@@ -106,11 +118,52 @@ header > nav a {
   padding: 3px;
 }
 
+/*
+ul {
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #000000;
+}
+*/
+
 footer a {
   color: rgb(196, 144, 13);
   text-decoration: none;
 }
 
+/* M2LO5 Demonstrate contextual selectors (x2)
+Parent > child: these settings will apply to 'a' elements directly within a list 
+li > a { */
+  /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
+  This color setting will take precedence over the 'a' setting 
+  display: block;
+  color: #e9c650;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+a {
+  color: #5f5123;
+}
+*/
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id 
+a[href$=".html"] {
+  margin-left: 17px;
+  border-style: solid;
+  border-width: 3px;
+}  
+*/
+/* M2LO5 Demonstrate contextual selectors (x1)
+Parent descendant: this defines list elements anywhere within an unordered list
+ul li { */
+  /* M2LO12 Demonstrate how CSS can change presentation of page elements 
+  This changes the Nav list display from vertical to horizontal 
+  float: left;
+}
+*/
 nav.horizontal ul li {
   display: block;
   text-align: center;
@@ -125,7 +178,7 @@ nav.horizontal a:link, nav.horizontal a:visited {
   background-color: black;
   border: solid 3px black;
 }
-
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-class */
 nav.horizontal a:hover, nav.horizontal a:active {
   color: rgb(219, 161, 15);
   background-color: rgb(55, 49, 68);
@@ -175,6 +228,7 @@ blockquote {
   left: 10px;
 }
 
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-element */
 blockquote::first-letter {
   font-size: 1.6em;
 }
@@ -184,6 +238,7 @@ blockquote::first-letter {
   background-image: linear-gradient(to bottom right, #082e1c, rgb(15, 99, 50));
 }
 
+/* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
 h2.clh {
   color: #000;
   text-align: center;
@@ -204,6 +259,7 @@ img:hover {
   opacity: 0.5;
 }
 
+/* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
 #aboutTitle {
   color: black;
   padding: 10px;
