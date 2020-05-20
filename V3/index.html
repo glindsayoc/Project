@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page 
+(The tags in this file are basic, and the page is very simple in scope) -->
+<html lang="en">
+
+    <head>
+
+        <!--
+            CIS 155 - Web Dev 2
+            Project V1
+            Author: Gordon Lindsay
+            Date: 5/16/2020
+            Filename: index.html  
+        -->
+
+        <meta charset="UTF-8"/>
+        <title>Gordon's Gallery</title>
+        <!-- M1LO8 Demonstrate the use of external style sheets -->
+        <link href="styles.css" rel="stylesheet" />
+
+    </head>
+
+
+    <body>
+
+        <header>
+            <!-- M1LO9 Demonstrate the use of inline images (HTML)
+            <img src="gg_title_image.jpg" alt="Gordon's Gallery"/> -->
+            <h1> Gordon's Gallery </h1>
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
+            <nav id="top" class="horizontal">
+                <!-- M1LO12 Create navigation using unordered lists (HTML) -->            
+                <ul class="row">
+                    <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation -->
+                    <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
+                    <li><a id="current" href="index.html">Home</a></li>
+                    <li><a href="stone.html">Stone</a></li>
+                    <li><a href="metal.html">Metal</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="grid-container1">
+            <div class="grid-item">
+                <h2>
+                    Hello, and welcome to my hobby gallery.
+                </h2>
+            </div>
+            <div class="grid-item">
+                <blockquote>
+                    This is a place for me to show a few of the things I've made or 
+                    am currently in the process of making. I'll be adding more 
+                    pictures and descriptions as time goes on, and hopefully another 
+                    category or two. Most of my hobbies represent the fun parts of jobs 
+                    I've had over the years, and while I'm no longer making a living 
+                    from these crafts, I do still occasionally sell things I make.
+                </blockquote>
+            </div>
+            <div class="grid-item">
+                <h2>
+                    Featuring:
+                </h2>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <!-- M4LO1 Demonstrate the use of figure boxes  -->
+                <figure>
+                    <a href="stone.html"><img src="img/stone.jpg" alt="Stone"></a>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <a href="metal.html"><img src="img/metal.JPG" alt="Metal"></a>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <a href="jewelry.html"><img src="img/jewelry.jpg" alt="Jewelry"></a>
+                </figure>
+            </div>
+        </div>
+
+        <br /><br />
+
+        <footer>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <!-- M1LO13 Demonstrate using 3 types of hyperlinks: external -->
+                    <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
+                    <!-- M1LO10 Demonstrate the use of special characters from extended character sets
+                    &emsp; &emsp; &emsp; -->
+                </div>
+                <div class="grid-item">
+                    <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
+                    <a href="#top">Click here to return to the top</a>
+                    <!-- &emsp; &emsp; &emsp; -->
+                </div>
+                <div class="grid-item">
+                    <a href="tel:555555555">phone:	555.555.5555</a>
+                </div>
+            </div>   
+        </footer>
+        
+    </body>
+
+</html>
