@@ -118,52 +118,11 @@ header > nav a {
   padding: 3px;
 }
 
-/*
-ul {
-  list-style-type: none;
-  padding: 0px;
-  overflow: hidden;
-  background-color: #000000;
-}
-*/
-
 footer a {
   color: rgb(196, 144, 13);
   text-decoration: none;
 }
 
-/* M2LO5 Demonstrate contextual selectors (x2)
-Parent > child: these settings will apply to 'a' elements directly within a list 
-li > a { */
-  /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
-  This color setting will take precedence over the 'a' setting 
-  display: block;
-  color: #e9c650;
-  font-size: 1.1em;
-  text-align: center;
-  padding: 10px 25px;
-  text-decoration: none;
-}
-
-a {
-  color: #5f5123;
-}
-*/
-/* M2LO7 Demonstrate a CSS attribute selector other than class or id 
-a[href$=".html"] {
-  margin-left: 17px;
-  border-style: solid;
-  border-width: 3px;
-}  
-*/
-/* M2LO5 Demonstrate contextual selectors (x1)
-Parent descendant: this defines list elements anywhere within an unordered list
-ul li { */
-  /* M2LO12 Demonstrate how CSS can change presentation of page elements 
-  This changes the Nav list display from vertical to horizontal 
-  float: left;
-}
-*/
 nav.horizontal ul li {
   display: block;
   text-align: center;
@@ -264,9 +223,9 @@ img:hover {
   color: black;
   padding: 10px;
   /* M3LO8A Demonstrate absolute positioning 
-  This allowed me to use the offset to slightly overlap another element */
-  position: absolute;
-  left: 280px;
+  This allowed me to use the offset to slightly overlap another element
+  position: absolute; 
+  left: 280px; */
 }
 
 /* M3LO11 Demonstrate -prefix- style browser extensions use in CSS 
@@ -350,3 +309,44 @@ This clears floats after the row elements to prevent collapse. */
 content: '';
   display: table;
 }
+
+/* Not used in V2 */
+/* ul {
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #000000;
+} */
+
+/* M2LO5 Demonstrate contextual selectors (x2)
+Parent > child: these settings will apply to 'a' elements directly within a list 
+li > a { */
+  /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
+  This color setting will take precedence over the 'a' setting 
+  display: block;
+  color: #e9c650;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+a {
+  color: #5f5123;
+} */
+
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id 
+a[href$=".html"] {
+  margin-left: 17px;
+  border-style: solid;
+  border-width: 3px;
+} */
+
+/* M2LO5 Demonstrate contextual selectors (x1)
+Parent descendant: this defines list elements anywhere within an unordered list
+ul li { */
+  /* M2LO12 Demonstrate how CSS can change presentation of page elements 
+  This changes the Nav list display from vertical to horizontal 
+  float: left;
+}
+*/
