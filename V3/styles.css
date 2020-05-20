@@ -62,10 +62,16 @@ html {
   since rgb works on legacy browsers where hsl might not, including it first 
   ensures compatibility, but if the browser recognizes hsl, it will use that 
   encoding since it is the last one defined */
-  background-color: rgb(67, 66, 82); 
+  background-color: rgb(52, 50, 63); 
+
+/*  
   background-color: hsl(244, 10.8, 29.0);
+*/
+
   /* M4LO2 Demonstrate the use of background images (CSS) */
+/* 
   background: url(img/Driftwood2.jpg) 100%/contain fixed;
+*/
   /* M3LO10 Demonstrate an overflow setting:
   This adds a scrollbar to elements that don't fit their container */
   overflow: auto;
@@ -74,7 +80,7 @@ html {
 body {
   /* M2LO13 Demonstrate how CSS can change presentation of textual elements
   This changes the font from the browser default */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -103,7 +109,11 @@ header {
   /* M4LO5 Demonstrate the use of text or box shadowing: 
   This is adding the shadow to the title at the top of my page. */
   text-shadow: -4px 3px 1px #000000;
+
+/*  
   background: url(img/Driftwood1.jpg) 100%/cover local;
+*/
+
   padding: 10px 0px 10px 0px;
   text-align: center;
   width: 100%;
@@ -180,11 +190,11 @@ blockquote {
   padding: 5px 20px 5px 20px;
   border: solid 4px rgb(28, 28, 34);
   /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
-  border-radius: 16px;
+  border-radius: 8px;
   /* M3LO8B Demonstrate relative positioning: 
   This positions the left side of blockquotes 10px away from the left side of the viewport */
   position: relative;
-  left: 10px;
+  top: 4px; 
 }
 
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-element */
@@ -210,13 +220,15 @@ figure {
 img {
   display: block;
   margin: auto;
+  border: solid 4px rgb(52, 50, 63);
+  border-radius: 8px;
   object-fit: cover;
 }
 
-/* M4LO6 Demonstrate the use of opacity/transparency for images */
+/* M4LO6 Demonstrate the use of opacity/transparency for images
 img:hover {
   opacity: 0.5;
-}
+} */
 
 /* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
 #aboutTitle {
