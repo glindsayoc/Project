@@ -73,7 +73,7 @@ header {
   This is adding the shadow to the title at the top of my page. */
   text-shadow: -4px 3px 1px #000000;
   /* background: url(img/Driftwood1.jpg) 100%/cover local; */
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
   text-align: center;
   width: 100%;
 }
