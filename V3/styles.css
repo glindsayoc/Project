@@ -132,7 +132,7 @@ nav.horizontal a:hover, nav.horizontal a:active {
   border: solid 3px black;
 }
 
-#current {
+#currenth, #currentv {
   color: rgb(248, 221, 68);
   border: inset 3px rgb(21, 21, 61);
   background-color: rgb(28, 28, 34);
