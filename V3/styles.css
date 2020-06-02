@@ -107,8 +107,7 @@ nav.horizontal ul {
 nav.horizontal li {
   font-size: 1.2em;
   text-decoration: none;
-  line-height: auto;
-	list-style-type: none;
+/*	list-style-type: none;*/
   width: 100%;
   /* M3LO2 Demonstrate floating elements:
   This starts the unordered list at the left side of the viewport 
