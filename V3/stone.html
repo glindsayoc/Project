@@ -6,28 +6,26 @@
 
         <!--
             CIS 155 - Web Dev 1
-            Project V1
+            Project V3
             Author: Gordon Lindsay
-            Date: 5/2/2020
+            Date: 5/30/2020
             Filename: stone.html  
         -->
 
-        <meta charset="UTF-8"/>
         <title>Gordon's Gallery</title>
-        <link href="styles.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="reset.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
 
     </head>
 
     <body>
 
         <header id="top">
-            <!--  -->
             <h1 > Gordon's Gallery </h1>
-
-            <nav class="horizontal">
-                <!--  -->            
-                <ul class="row">
-
+            <nav class="horizontal">      
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a id="current" href="stone.html">Stone</a></li>
                     <li><a href="metal.html">Metal</a></li>
@@ -35,13 +33,21 @@
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
+            <nav class="vertical">
+                <button class="dropbtn">Navigation</button>
+                <nav class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a id="current" href="stone.html">Stone</a>
+                    <a href="metal.html">Metal</a>
+                    <a href="jewelry.html">Jewelry</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </nav>
         </header>
         
         <br /><br /><br />
-        
 
-        <div class="grid-container3">
-            <div class="grid-item">
+        <div class="flex-container">
                 <blockquote>
                     I really enjoy cutting open a rock and deciding how it should be sliced to 
                     bring out the most interesting features. This tiger's-eye had been compressed 
@@ -49,19 +55,13 @@
                     gave it a high dome, which brought out the lightning-bolt effect instead of a 
                     cat's-eye. These are being paired with moonstone for a necklace.
                 </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/s2_TigereyeRough.jpg" alt="tigereye" />
-            </div>
-            <div class="grid-item">
-                <img src="img/s5_TigereyePrePolish.jpg" alt="polish"/>
-            </div>
-            <div class="grid-item">
-                <img src="img/sbinghamite_and_agate-jasper.jpg" alt="jasper"/>
-            </div>
-            <div class="grid-item">
+                <img src="img/s2_TigereyeRough.jpg" class="size1" alt="tigereye" />
+                <img src="img/s5_TigereyePrePolish.jpg" class="size1" alt="polish"/>
+        </div>
+        <div class="flex-container">
+                <img src="img/sbinghamite_and_agate-jasper.jpg" class="size1" alt="jasper"/>
                 <blockquote>
-                    These stones all prettier than they appear in the pictures. It might be a good 
+                    These stones are all prettier than they appear in the pictures. It might be a good 
                     summer project for me to learn more about photographing small shiny things and get 
                     the right kind of lighting so I can do a better job with it. I went through about 
                     two hundred really bad pictures, just to have a few for this page's content. 
@@ -72,14 +72,11 @@
                     flow visually and some funky colors, and they're cut slightly assymetrical to go with 
                     the organic look of the settings they're going into.
                 </blockquote>
+                <img src="img/ring_stones.jpg" class="size1" alt="ring"/>
             </div>
-            <div class="grid-item">
-                <img src="img/ring_stones.jpg" alt="ring"/>
-            </div>
-            <div class="grid-item">
-                <img src="img/srhodochrosite_and_opals.jpg" alt="opals"/>
-            </div>
-            <div class="grid-item">
+        </div>
+        <div class="flex-container">
+                <img src="img/srhodochrosite_and_opals.jpg" class="size1" alt="opals"/>
                 <blockquote>
                     Opals are one of the stones I most enjoy working with. The pink stones are rhodochrosite 
                     and there's a better shot of the agatized jasper and a not-so-good shot of a rainbow 
@@ -89,28 +86,23 @@
                     ranges from invisible to adding bright flashes of color. The wings are where I tried to 
                     put the image map link, but it shifted a bit to the right for some reason.
                 </blockquote>
-            </div>
-            <div class="grid-item">
                 <!-- M4LO7 Demonstrate the use of image maps, including determining x and y values
                 Click the on the butterfly wings in the picture -->
-                <img src="img/sTray.jpg" alt="tray" usemap="#wing"/>
+                <img src="img/sTray.jpg" class="size1" alt="tray" usemap="#wing"/>
                 <map name="wing">
                     <area shape="poly" coords="59,244,364,300,273,412,89,381" alt="Wing" href="wing.html"/>
                 </map> 
-            </div>
-            <div class="grid-item">
-                <img src="img/sFaceted Stones.jpg" alt="faceted"/>
-            </div>
-            <div class="grid-item">
+        </div>
+        <div class="flex-container">
+                <img src="img/sFaceted Stones.jpg" class="size1" alt="faceted"/>
                 <blockquote>
-                    I've only done a few faceted stones, 
+                    I've only done a few faceted stones because I don't have all the equipment to do them 
+                    properly. 
                     <br /><br />
-
+                    I do have enough to do intarsia though, and I enjoy the challenges of matching 
+                    pieces of stone and planning all of the cuts needed for a particular effect.
                 </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/sIntarsia.jpg" alt="intarsia"/>
-            </div>
+                <img src="img/sIntarsia.jpg" class="size1" alt="intarsia"/>
         </div>
 
         <br /><br />
@@ -121,7 +113,7 @@
                     <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
                 </div>
                 <div class="grid-item">
-                    <a href="#top">Click here to return to the top</a>
+                    <a href="#top">Return to top</a>
                 </div>
                 <div class="grid-item">
                     <a href="tel:555555555">phone:	555.555.5555</a>

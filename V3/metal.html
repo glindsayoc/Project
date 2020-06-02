@@ -6,28 +6,26 @@
 
         <!--
             CIS 155 - Web Dev 1
-            Project V1
+            Project V3
             Author: Gordon Lindsay
-            Date: 5/16/2020
+            Date: 5/30/2020
             Filename: metal.html  
         -->
 
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gordon's Gallery</title>
-        <link href="styles.css" rel="stylesheet" />
+        <link href="reset.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
 
     </head>
 
     <body>
 
         <header id="top">
-            <!--  -->
             <h1> Gordon's Gallery </h1>
-
-            <nav class="horizontal">
-                <!--  -->            
+            <nav class="horizontal">        
                 <ul class="row">
-
                     <li><a href="index.html">Home</a></li>
                     <li><a href="stone.html">Stone</a></li>
                     <li><a id="current" href="metal.html">Metal</a></li>
@@ -35,83 +33,77 @@
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
+            <nav class="vertical">
+                <button class="dropbtn">Navigation</button>
+                <nav class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="stone.html">Stone</a>
+                    <a id="current" href="metal.html">Metal</a>
+                    <a href="jewelry.html">Jewelry</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </nav>
         </header>
             
         <br />
 
-        <div class="grid-container2">
-            <div class="grid-item">
-                <blockquote>
-                    This was my first forged knife, made from a piece of rebar. It earned me 
-                    an apprenticeship. 
-                </blockquote>
-            </div>
-            <div class="grid-item">
-                <img id="flipH" src="img/first_knife.jpg" alt="first knife"/>
-            </div>
-            <div class="grid-item">
-                <blockquote>
-                    Work-In-Progress: <br />
-                    This is a file knife. It's common for bladesmiths to warm up by reforging
-                    an old broken file or some other piece of scrap. This one won't go through
-                    all the finishing processes of one of the custom knives, but it will eventually
-                    get heat-treated with a small batch of others like it and have a simple handle
-                    added.
-                </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/m2020-04-23_13-21-39_115.jpg" alt="knife wip 1"/>
-            </div>
-            <div class="grid-item">
-                <blockquote>
-                    Work-In-Progress: <br />
-                    This knife is a lot smaller than the others, and when it's done it
-                    will be a pendant knife that can be worn as jewelry. I'm happy with
-                    the basic design of the handle, but I'm going to re-cast it because
-                    there are a few details I want to change, and because there are a 
-                    few process flaws I don't want to try to fix. When it's finished, the 
-                    handle will have a two-tone patina of green for the leaves and vines 
-                    with a brown background. The sheath will also be a casting, styled to
-                    look like a flower with partially open sides to show the blade, and a 
-                    locking mechanism with a camouflaged release button.
-                </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/m20200423_115338.jpg" alt="knife wip 2"/>
-            </div>
-            <div class="grid-item">
-                <blockquote>
-                    Work-In-Progress: <br />
-                    This blade was made from a very high-quality steel
-                    and when polished will have a beautiful wavy heat-treat line. Handle 
-                    materials are bone, maple burl, and antler tip. After everything is 
-                    fitted and shaped, I'll add some carving and probably an oil finish.
-                </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/mknife2.jpg" alt="knife wip 3"/>
+        <div class="flex-container">
+            <blockquote>
+                This was my first forged knife, made from a piece of rebar. It earned me 
+                an apprenticeship. 
+            </blockquote>
+            <img id="flipH" src="img/first_knife.jpg" class="size2" alt="first knife"/>
+        </div>
+        <div class="flex-container">
+            <blockquote>
+                Work-In-Progress: <br />
+                This is a file knife. It's common for bladesmiths to warm up by reforging
+                an old broken file or some other piece of scrap. This one won't go through
+                all the finishing processes of one of the custom knives, but it will eventually
+                get heat-treated with a small batch of others like it and have a simple handle
+                added.
+            </blockquote>
+            <img src="img/m2020-04-23_13-21-39_115.jpg" class="size2" alt="knife wip 1"/>
+        </div>
+        <div class="flex-container">
+            <blockquote>
+                 Work-In-Progress: <br />
+                This knife is a lot smaller than the others, and when it's done it
+                will be a pendant knife that can be worn as jewelry. I'm happy with
+                the basic design of the handle, but I'm going to re-cast it because
+                there are a few details I want to change, and because there are a 
+                few process flaws I don't want to try to fix. When it's finished, the 
+                handle will have a two-tone patina of green for the leaves and vines 
+                with a brown background. The sheath will also be a casting, styled to
+                look like a flower with partially open sides to show the blade, and a 
+                locking mechanism with a camouflaged release button.
+            </blockquote>
+                <img src="img/m20200423_115338.jpg" class="size2" alt="knife wip 2"/>
             </div>
         </div>
+        <div class="flex-container">
+            <blockquote>
+                Work-In-Progress: <br />
+                This blade was made from a very high-quality steel
+                and when polished will have a beautiful wavy heat-treat line. Handle 
+                materials are bone, maple burl, and antler tip. After everything is 
+                fitted and shaped, I'll add some carving and probably an oil finish.
+            </blockquote>
+            <img src="img/mknife2.jpg" class="size2" alt="knife wip 3"/>
+        </div>
 
-        <div class="grid-container3">
-            <div class="grid-item">
-                <img src="img/m2pit.jpg" alt="2 pan fire pit"/>
-            </div>
-            <div class="grid-item">
+        <div class="flex-container">
+                <img src="img/m2pit.jpg" class="size1" alt="2 pan fire pit"/>
                 <blockquote>
                     This suspended fire pit was made for the SCA house I belong to. It's expandable 
                     from two pans to three, allowing a few more people to sit around them when needed. 
                     This was so popular with the guests who stopped by that I'm now making more and 
                     selling them. 
                 </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/m3pit.jpg" alt="3 pan fire pit"/>
-            </div>
-            <div class="grid-item">
-                <img src="img/mhooks3.jpg" alt="orchid hooks"/>
-            </div>
-            <div class="grid-item">
+                <img src="img/m3pit.jpg" class="size1" alt="3 pan fire pit"/>
+        </div>
+        <div class="flex-container">
+                <img src="img/mhooks3.jpg" class="size1" alt="orchid hooks"/>
                 <blockquote>
                     I don't always use a hammer when working with metal. The hooks on the fence 
                     were the starting designs for a friend in Hawaii who grows orchids and wanted 
@@ -122,14 +114,10 @@
                     I stripped the paint off of, etched a raised design into, then added an old-style 
                     copper acid-plating and a gun-bluing patina accent. 
                 </blockquote>
-            </div>
-            <div class="grid-item">
-                <img src="img/mtin.jpg" alt="tin"/>
-            </div>
-            <div class="grid-item">
-                <img src="img/mDoor_Knocker.jpg" alt="knocker"/>
-            </div>
-            <div class="grid-item">
+                <img src="img/mtin.jpg" class="size1" alt="tin"/>
+        </div>
+        <div class="flex-container">
+                <img src="img/mDoor_Knocker.jpg" class="size1" alt="knocker"/>
                 <blockquote>
                     This door-knocker was a fun project, and I have some matching door handles 
                     I'm getting ready to cast. The three alloys used were all ones I developed 
@@ -140,19 +128,80 @@
                     that same alloy recipe for the tongue-ring of the door knocker, because it had a 
                     high melt-point which was needed to be able to cast the tongue around it.
                 </blockquote>
-            </div>
+                <img src="img/Freeform_Casting.jpg" class="size1" alt="alloy"/>
+        </div><br />
+        
+        <div class="grid-container2">
             <div class="grid-item">
-                <img src="img/Freeform_Casting.jpg" alt="alloy"/>
+                <!-- M4LO1 Demonstrate the use of figure boxes  -->
+                <figure>
+                    <table>
+                        <caption id="temps">Handy Info for Some Common Steels (F)</caption>
+                        <colgroup>
+                            <col id="firstCol" />
+                            <col class="dataCols" span="4">
+                            <col id="dataCols" /> 
+                        </colgroup>
+                        
+                        <thead>
+                            <tr>
+                                <th>Type of Steel</th>
+                                <th>1045</th>
+                                <th>1095</th>
+                                <th>5160</th>
+                                <th>L6</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <th>Quench In:</th>
+                                <td>Water</td>
+                                <td>Water</td>
+                                <td>Oil</td>
+                                <td>Oil</td>
+                            </tr>
+                            <tr>
+                                <th>Forge Above</th>
+                                <td>1600</td>
+                                <td>1500</td>
+                                <td>1600</td>
+                                <td>1550</td>
+                            </tr>
+                            <tr>
+                                <th>Forge Below</th>
+                                <td>2275</td>
+                                <td>2100</td>
+                                <td>2200</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <th>Annealing</th>
+                                <td>1550</td>
+                                <td>1475</td>
+                                <td>1450</td>
+                                <td>1400</td>
+                            </tr>              
+                            <tr>
+                                <th>Hardening</th>
+                                <td>1550</td>
+                                <td>1475</td>
+                                <td>1525</td>
+                                <td>1550</td>
+                            </tr>                              
+                        </tbody>
+                    </table>
+            </figure><br/><br/><br/>
             </div>
         </div>
-
+        
         <footer>
             <div class="grid-container">
                 <div class="grid-item">
                     <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
                 </div>
                 <div class="grid-item">
-                    <a href="#top">Click here to return to the top</a>
+                    <a href="#top">Return to top</a>
                 </div>
                 <div class="grid-item">
                     <a href="tel:555555555">phone:	555.555.5555</a>

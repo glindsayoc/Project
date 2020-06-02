@@ -6,17 +6,20 @@
     <head>
 
         <!--
-            CIS 155 - Web Dev 2
-            Project V1
+            CIS 155 - Web Dev 1
+            Project V3
             Author: Gordon Lindsay
-            Date: 5/16/2020
+            Date: 5/30/2020
             Filename: index.html  
         -->
 
         <meta charset="UTF-8"/>
         <title>Gordon's Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- M3LO1 Demonstrate the use of a CSS reset style sheet -->
+        <link href="reset.css" rel="stylesheet" />
         <!-- M1LO8 Demonstrate the use of external style sheets -->
-        <link href="styles.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
 
     </head>
 
@@ -30,7 +33,7 @@
             <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
             <nav class="horizontal">
                 <!-- M1LO12 Create navigation using unordered lists (HTML) -->            
-                <ul class="row">
+                <ul>
                     <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation -->
                     <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
                     <li><a id="current" href="index.html">Home</a></li>
@@ -39,6 +42,16 @@
                     <li><a href="jewelry.html">Jewelry</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
+            </nav>
+            <nav class="vertical">
+                <button class="dropbtn">Navigation</button>
+                <nav class="dropdown-content">
+                    <a id="current" href="index.html">Home</a>
+                    <a href="stone.html">Stone</a>
+                    <a href="metal.html">Metal</a>
+                    <a href="jewelry.html">Jewelry</a>
+                    <a href="about.html">About</a>
+                </nav>
             </nav>
         </header>
         
@@ -65,23 +78,10 @@
             </div>
         </div>
 
-        <div class="grid-container">
-            <div class="grid-item">
-                <!-- M4LO1 Demonstrate the use of figure boxes  -->
-                <figure>
-                    <a href="stone.html"><img src="img/stone.jpg" alt="Stone"></a>
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <a href="metal.html"><img src="img/metal.JPG" alt="Metal"></a>
-                </figure>
-            </div>
-            <div class="grid-item">
-                <figure>
-                    <a href="jewelry.html"><img src="img/jewelry.jpg" alt="Jewelry"></a>
-                </figure>
-            </div>
+        <div class="flex-container">
+            <a href="stone.html"><img src="img/stone.jpg" alt="Stone"></a>
+            <a href="metal.html"><img src="img/metal.JPG" alt="Metal"></a>
+            <a href="jewelry.html"><img src="img/jewelry.jpg" alt="Jewelry"></a>
         </div>
 
         <br /><br />
@@ -96,7 +96,7 @@
                 </div>
                 <div class="grid-item">
                     <!-- M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids -->
-                    <a href="#top">Click here to return to the top</a>
+                    <a href="#top">Return to top</a>
                     <!-- &emsp; &emsp; &emsp; -->
                 </div>
                 <div class="grid-item">
