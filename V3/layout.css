@@ -12,11 +12,14 @@ Filename: layout.css
 */
 
 
-/* ================================
-    Mobile Devices: 0 - 480 pixels
-   ================================
-*/
+/*============================
+Mobile Devices: 0 - 480 pixels
+============================*/
+/* M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+This sets styles for mobile screens */
 @media only screen and (max-width: 480px) {
+  /* M5LO5 Demonstrate the use of flexboxes on a web page
+  Flexbox was used to replace most of the grid layout */
   body {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -31,13 +34,13 @@ Filename: layout.css
   nav.horizontal {
     display: none;
   }
-  nav.vertical {
-    
-  }
   body > footer {
     -webkit-order: 100;
     order: 100;
   }
+  /* M5LO7 Demonstrate use of properties of flexbox containers
+  Flexbox containers were used to create rows, making it easy to
+  switch between horizontal and vertical layout */
   .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -48,10 +51,11 @@ Filename: layout.css
   }
 }
 
-/* =====================================================
-	  Tablet and Desktop Devices: Greater than 480 pixels
-   =====================================================
-*/
+/*=================================================
+Tablet and Desktop Devices: Greater than 480 pixels
+================================================ */
+/* M5LO3 Use media queries to format a page differently for phones vs. PCs.
+This limits fonts from shrinking too small as browser width decreases */
 @media only screen and (max-width: 1080px) {
   body {
     font-size: 12px;
@@ -67,6 +71,8 @@ Filename: layout.css
   }
 }
 
+/* M5LO3 Use media queries to format a page differently for phones vs. PCs.
+This sets styles for larger screens */
 @media only screen and (min-width: 481px) {
   body {
     -webkit-flex-flow: row nowrap;

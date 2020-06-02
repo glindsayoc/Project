@@ -11,6 +11,9 @@ Filename: tables.css
 /*==========
 Table Styles 
 ==========*/
+/* M6LO7 Demonstrate how to format a table with CSS
+These table styles keep to the theme of the page, but 
+make the table distinct from other content. */ 
 table {
   background: black;
   border: 5px outset darkgray;
@@ -63,8 +66,3 @@ thead tr {
 thead tr:first-of-type th:first-of-type {
   font-size: 1.2em;
 }
-/*
-thead tr:first-of-type th:not(:first-of-type) {
-  background: transparent;
-  color: black;
-}*/
