@@ -137,17 +137,15 @@
                     <!-- M6LO3 Demonstrate how to create a table 
                     This table shows transition temperatures of a few steel alloys -->
                     <table>
-                        <caption id="temps">Handy Info for Some Common Steels (F)</caption>
+                        <caption id="temps">Handy Info for Some Common Steels</caption>
                         <colgroup>
                             <col id="firstCol" />
-                            <col class="dataCols" span="4"/>
+                            <col class="dataCols" span="4" />
                         </colgroup>
                         
                         <thead>
-                            <!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
-                            This causes the table heading to span two rows -->
                             <tr>
-                                <th rowspan="2">Type of Steel</th>
+                                <th>Type of Steel</th>
                                 <th>1045</th>
                                 <th>1095</th>
                                 <th>5160</th>
@@ -190,7 +188,13 @@
                                 <td>1475</td>
                                 <td>1525</td>
                                 <td>1550</td>
-                            </tr>                              
+                            </tr>
+                            <tr>
+                                <th>Note:</th>
+                                <!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
+                                This causes the row data to span four columns -->
+                                <td colspan="4">All temperatures in degrees F</td>
+                            </tr>                       
                         </tbody>
                     </table>
             </figure><br/><br/><br/>
