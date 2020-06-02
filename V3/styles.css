@@ -26,7 +26,7 @@ html {
   ensures compatibility, but if the browser recognizes hsl, it will use that 
   encoding since it is the last one defined */
   background-color: rgb(52, 50, 63);   
-  background-color: hsl(244, 10, 29);
+  background-color: hsl(244, 10.8, 29.0);
   /* M4LO2 Demonstrate the use of background images (CSS) */
   background: url(img/Driftwood2.jpg) 100%/contain fixed;
   /* M3LO10 Demonstrate an overflow setting:
