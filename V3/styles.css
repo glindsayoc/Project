@@ -227,7 +227,7 @@ blockquote {
   font-size: 1.2em;
   display: -webkit-flex;
   display: flex;
-  flex-shrink: 1;  
+  flex-shrink: 3;  
   padding: 5px 20px 5px 20px;
   border: solid 4px rgb(28, 28, 34);
   /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
@@ -261,7 +261,7 @@ Images are displayed as flex items. Flex-shrink is used here. */
 img {
   display: -webkit-flex;
   display: flex;
-  flex-shrink: 2;
+  flex-shrink: 1;
   width: 100%;
   border: solid 4px rgb(52, 50, 63);
   border-radius: 10px;
