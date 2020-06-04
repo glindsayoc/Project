@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!--
+            CIS 155 - Web Dev 1
+            Project V3
+            Author: Gordon Lindsay
+            Date: 5/30/2020
+            Filename: about.html  
+        -->
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gordon's Gallery</title>
+        <link href="reset.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
+
+        <!-- M2LO4 Demonstrate external, embedded, and inline styles: embedded 
+        <style>
+            p {padding: 0px;}
+        </style> -->
+
+    </head>
+
+    <body>
+
+        <header id="top">
+            <h1> Gordon's Gallery </h1>
+            <nav class="horizontal">   
+                <ul class="row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stone.html">Stone</a></li>
+                    <li><a href="metal.html">Metal</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a id="currenth" href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <nav class="vertical">
+                <button class="navbutton">Navigation</button>
+                <nav class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="stone.html">Stone</a>
+                    <a href="metal.html">Metal</a>
+                    <a href="jewelry.html">Jewelry</a>
+                    <a id="currentv" href="about.html">About</a>
+                </nav>
+            </nav>
+        </header>
+
+        <!-- M2LO6  Demonstrate a CSS id and a CSS class selector: CSS id -->
+        <h2 id="aboutTitle">About this site:</h2>
+
+        <!-- M2LO4 Demonstrate external, embedded, and inline styles: inline
+        This inline style change alters the alignment of this paragraph -->
+        <p style="text-align: center;">
+        Created by Gordon Lindsay for Web Dev I Spring 2020 Project
+        </p>
+        <br /><br />
+
+        <!-- M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class -->
+        <h2 class="clh">V1 CHANGE LOG 5/2/2020</h2>
+
+        <!-- M1LO7 Demonstrate the use of ordered lists (HTML) -->
+        <ol>
+            <li> Created index.html </li>
+            <li> Created about.html </li>
+            <li> Created stone.html </li>
+            <li> Created metals.html </li>
+            <li> Created styles.css </li>
+            <li> Added HTML coding to create page layouts </li>
+            <li> Added CSS coding to styles.css </li>
+            <li> Added content to about.html </li>
+        </ol>
+
+        <h2 class="clh">V2 CHANGE LOG 5/16/2020</h2>
+
+        <ol id="grad">
+            <li> Created jewelry.html </li>
+            <li> Created wing.html </li>
+            <li> Added content to stone.html </li>
+            <li> Added content to metals.html </li>
+            <li> Added content to jewelry.html </li>
+            <li> Added HTML coding to jewelry.html </li>
+            <li> Added CSS coding to styles.css </li>
+            <li> Added CSS coding to reset_styles.css </li>
+            <li> Added V2 changes to about.html </li>
+        </ol>
+
+        <h2 class="clh">V3 CHANGE LOG 5/30/2020</h2>
+
+        <ol>
+            <li> Created layout.css </li>
+            <li> Created reset.css </li>
+            <li> Created tables.css</li>
+            <li> Moved reset styles to reset.css</li>
+            <li> Added CSS coding to layout.css</li>
+            <li> Added CSS coding to tables.css</li>
+            <li> Added content gallery pages </li>
+            <li> Changed some styles from grid to flex </li>
+            <li> Added table to metals.html </li>
+            <li> Added dropdown menu to mobile display </li>
+            <li> Commented out unused code from previous versions </li>
+            <li> Fought with GitHub to recognize images </li>
+            <li> Added V3 changes to about.html </li>
+        </ol>
+        <!-- Getting ready for the next version changes -->
+        <h2 class="clh">V4 CHANGE LOG 6//2020</h2>
+    
+        <footer>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="mailto:gordonsgallery@example.com">email:	gordonsgallery@example.com</a>
+                </div>
+                <div class="grid-item">
+                    <a href="#top">Return to top</a>
+                </div>
+                <div class="grid-item">
+                    <a href="tel:555555555">phone:	555.555.5555</a>
+                </div>
+            </div>   
+        </footer>
+
+    </body>
+
+    <!-- Note: All image content used was created by Gordon Lindsay -->
+
+</html>
