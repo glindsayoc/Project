@@ -27,7 +27,7 @@ html {
   background-color: rgb(52, 50, 63);   
   background-color: hsl(244, 10.8, 29.0);
   /* M4LO2 Demonstrate the use of background images (CSS) */
-  /*background: url(img/Driftwood2.jpg) 100%/contain fixed;*/
+  background: url(img/Driftwood2.jpg) 100%/contain fixed;
   /* M3LO10 Demonstrate an overflow setting:
   This adds a scrollbar to elements that don't fit within their container */
   overflow: auto;
