@@ -20,10 +20,15 @@ This sets styles for mobile screens */
 @media only screen and (max-width: 480px) {
   /* M5LO5 Demonstrate the use of flexboxes on a web page
   Flexbox was used to replace most of the grid layout */
+  html {
+    margin-top: 40px;
+  
   body {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     font-size: .7em;
+    height: 100%;
+    width: 100%;
   }
   h1 {
     font-size: 3em;
