@@ -228,6 +228,7 @@ p {
 blockquote {
   display: block;
   color: lightsteelblue;
+  background-color: rgb(52, 50, 63);
   font-size: 1.2em;
   display: -webkit-flex;
   display: flex;
