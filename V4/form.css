@@ -12,6 +12,11 @@ Filename: form.css
 /*=========
 Form Styles
 =========*/
+section {
+    font: 1em sans-serif;
+    color: steelblue;
+}
+
 input, select, textarea {
   background-color: rgb(245, 245, 140);
 }
