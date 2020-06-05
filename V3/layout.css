@@ -56,7 +56,7 @@ Tablet and Desktop Devices: Greater than 480 pixels
 ================================================ */
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs.
 This limits fonts from shrinking too small as browser width decreases */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 940px) {
   body {
     font-size: 12px;
   }
