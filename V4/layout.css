@@ -22,6 +22,7 @@ This sets styles for mobile screens */
   Flexbox was used to replace most of the grid layout */
   html {
     margin-top: 40px;
+  }
   
   body {
     -webkit-flex-flow: column wrap;
