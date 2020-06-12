@@ -4,9 +4,9 @@
    <head>
       <!--
          CIS 155 - Web Dev 1
-         Project V3
+         Project V4
          Author: Gordon Lindsay
-         Date: 5/30/2020
+         Date:   6/15/2020
          Filename: index.html 
       -->
       
@@ -21,48 +21,42 @@
    <body>
 
       <header id="top">
-         <h1 > Gordon's Gallery </h1>
-         <nav class="horizontal">      
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a id="currenth" href="stone.html">Stone</a></li>
-               <li><a href="metal.html">Metal</a></li>
-               <li><a href="jewelry.html">Jewelry</a></li>
-               <li><a href="about.html">About</a></li>
-            </ul>
+         <h1> Gordon's Gallery </h1>
+         <nav class="horizontal">    
+             <ul class="row">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="portfolio.html">Portfolio</a></li>
+                 <li><a href="coming-soon.html">Coming Soon</a></li>
+                 <li><a id="current-h" href="available.html">Available</a></li>
+                 <li><a href="about.html">About</a></li>
+             </ul>
          </nav>
          <nav class="vertical">
-            <button class="navbutton">Navigation</button>
-            <nav class="dropdown-content">
-               <a href="index.html">Home</a>
-               <a id="currentv" href="stone.html">Stone</a>
-               <a href="metal.html">Metal</a>
-               <a href="jewelry.html">Jewelry</a>
-               <a href="about.html">About</a>
-            </nav>
+             <button class="nav-button">Navigation</button>
+             <nav class="dropdown-content">
+                 <a href="index.html">Home</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="coming-soon.html">Coming Soon</a>
+                 <a id="current-v" href="available.html">Available</a>
+                 <a href="about.html">About</a>
+             </nav>
          </nav>
       </header>
 
       <section>
          <br />
-         <h2>Order Form</h2>
-         <p>Required Item (*)</p>
+         <h2 style="text-align:center">Order Form</h2>
+         <p>Required Items (*)</p>
 
          <form action="" method="POST" >
-   <!--     <form action="http://www.example.com/cg/register" method="post"> --> 
 
-   <!--   <label for="title">Title</label>
-         <input name="title" id="titleBox" type="text" list="titleList" />
-         <datalist id="titleList">
-         <option value="Mr." >
-         <option value="Mrs." >
-         <option value="Ms." >
-         <option value="Prof." >
-         <option value="Dr." >
-         <option value="Assist. Prof." >
-         <option value="Assoc. Prof." >
+
+         <label for="orderType">Order Type</label>
+         <input name="type" id="orderType" type="text" list="typeList" />
+         <datalist id="typeList">
+         <option value="Stock Item" >
+         <option value="Custom" >
          </datalist>
-      -->
 
          <label for="fnBox">First Name*</label>
          <input name="firstName" id="fnBox" type="text" required />
@@ -70,48 +64,17 @@
          <input name="lastName" id="lnBox" type="text" required />
          <label for="addBox">Address*</label>
          <textarea name="address" id="addBox" type="text" required></textarea>
-
-   <!--    <label for="groupBox">Company or University</label>
-         <input name="group" id="groupBox" type="text" /> --> 
-
          <label for="mailBox">E-mail*</label>
          <input name="email" id="mailBox" type="email" required />
          <label for="phoneBox">Phone Number*</label>
          <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required placeholder="(nnn) nnn-nnnn" />
-   <!--      <label for="idBox">ACGIP Membership Number</label>
-         <input name="acgipID" id="idBox" type="text" pattern="^acgip\-\d{6}$" placeholder="acgip-nnnnnn" />
+         <label for="itemBox">Item Description*</label>
+         <textarea name="item" id="itemBox" type="text" required></textarea>
 
-         <label for="regList">Registration Category</label>
-         <select name="registerType" id="regList">
-         <option value="member">ACGIP Member ($695)</option>
-         <option value="nonmember">Non-Member ($795)</option>
-         <option value="student">Student ($310)</option>
-         <option value="poster">Poster ($95)</option>
-         <option value="guest">Guest ($35)</option>  
-         </select> -->
-
-         <p><input type="submit" value="continue" /></p>
+         <p><input type="submit" value="Submit Order" /></p>
          </form>
 
       </section>
-   <!--
-      <aside>
-         <dl>
-            <dt>ACGIP Member ($695)</dt>
-            <dd>Eligible to attend all sessions and banquet</dd>
-            <dt>Non-Member ($795)</dt>
-            <dd>Eligible to attend all sessions and banquet</dd>
-            <dt>Student ($310)</dt>
-            <dd>Eligible to attend all sessions. <a href="#">Proof</a> of student status required</dd>
-            <dt>Poster ($95)</dt>
-            <dd>Eligible to attend display hall and vendor stations</dd>
-            <dt>Guest ($35)</dt>
-            <dd>Eligible to attend banquet only</dd>
-         </dl>
-      </aside> -->
 
-      <footer>
-         
-      </footer>
    </body>
 </html>

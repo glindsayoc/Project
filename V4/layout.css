@@ -5,9 +5,9 @@
 
 /*
 CIS 155 Web Dev 1  
-Project V3
+Project V4
 Author: Gordon Lindsay
-Date:   5/30/2020
+Date:   6/15/2020
 Filename: layout.css
 */
 
@@ -30,6 +30,8 @@ This sets styles for mobile screens */
     font-size: .7em;
     height: 100%;
     width: 100%;
+    max-width: 600px;
+    margin: auto;
   }
   h1 {
     font-size: 3em;
@@ -47,24 +49,72 @@ This sets styles for mobile screens */
   /* M5LO7 Demonstrate use of properties of flexbox containers
   Flexbox containers were used to create rows, making it easy to
   switch between horizontal and vertical layout */
-  .flex-container {
+  .flexContainer {
     display: -webkit-flex;
     display: flex;
     flex-direction: column; 
+    flex-wrap: nowrap;
+    background-color: rgb(28, 28, 34);
+   /* align-content: space-around; */
+    border-radius: 13px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 3px solid black;
   }
-  img.size1, img.size2{
+  img.size1, img.size2, blockquote, blockquote > prices {
     width: 100%;
   }
 }
 
-/*=================================================
-Tablet and Desktop Devices: Greater than 480 pixels
-================================================ */
-/* M5LO3 Use media queries to format a page differently for phones vs. PCs.
-This limits fonts from shrinking too small as browser width decreases */
+/*===================================================
+Tablet and Desktop Devices: 480 pixels to 1080 pixels
+================================================== */
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
+  body {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    font-size: .7em;
+    height: 100%;
+    width: 100%;
+  }
+  nav.vertical {
+    display: none;
+  }
+  nav.horizontal ul {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+  }
+  nav.horizontal ul > li {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .flexContainer {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    background-color: rgb(28, 28, 34);
+    border-radius: 13px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+  }
+  blockquote, blockquote > .prices, img.size1, img.size2 {
+    width: 100%;
+  }
+}
+
+/* Set minimum font sizes */
 @media only screen and (max-width: 1080px) {
   body {
     font-size: 12px;
+  }
+  .nav a {
+    font-size: 16px;
   }
   h1 {
     font-size: 38px;
@@ -77,9 +127,12 @@ This limits fonts from shrinking too small as browser width decreases */
   }
 }
 
+/*=======================================
+Desktop Devices: Greater than 1080 pixels
+====================================== */
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs.
-This sets styles for larger screens */
-@media only screen and (min-width: 481px) {
+This sets styles for large screens */
+@media only screen and (min-width: 1081px) {
   body {
     -webkit-flex-flow: row nowrap;
     -moz-flex-flow: row nowrap;
@@ -98,12 +151,15 @@ This sets styles for larger screens */
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
   }
-  .flex-container {
+  .flexContainer {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: space-evenly;
+    background-color: rgb(28, 28, 34);
+   /* align-content: space-around; */
+    border: 3px solid black;
+    border-radius: 13px;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;

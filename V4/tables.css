@@ -2,9 +2,9 @@
 
 /*
 CIS 155 Web Dev 1  
-Project V3
+Project V4
 Author: Gordon Lindsay
-Date:   5/30/2020
+Date:   6/15/2020
 Filename: tables.css
 */
 
@@ -16,7 +16,7 @@ These table styles keep to the theme of the page, but
 make the table distinct from other content. */ 
 table {
   background: black;
-  border: 5px outset darkgray;
+  border: 5px ridge darkgray;
   padding: 20px;
   width: 100%;
 }
@@ -41,8 +41,11 @@ td {
 
 caption {
     color: rgb(196, 144, 13);
+    background-color: black;
+    border: 5px ridge darkgray;
+    border-bottom: none;
     font-size: 1.3em;
-    padding-bottom: 3px;
+    padding: 4px 0px 5px 0px;
 }
 
 /*===========
