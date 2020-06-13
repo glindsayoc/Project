@@ -30,7 +30,7 @@ This sets styles for mobile screens */
     font-size: .7em;
     height: 100%;
     width: 100%;
-    max-width: 600px;
+  
     margin: auto;
   }
   h1 {
@@ -55,21 +55,20 @@ This sets styles for mobile screens */
     flex-direction: column; 
     flex-wrap: nowrap;
     background-color: rgb(28, 28, 34);
-   /* align-content: space-around; */
     border-radius: 13px;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
     border: 3px solid black;
   }
-  img.size1, img.size2, blockquote, blockquote > prices {
+  blockquote, blockquote > .prices, img.size1, img.size2 {
     width: 100%;
   }
 }
 
-/*===================================================
-Tablet and Desktop Devices: 480 pixels to 1080 pixels
-================================================== */
+/*=======================================
+Tablet Devices: 480 pixels to 1080 pixels
+====================================== */
 @media only screen and (min-width: 481px) and (max-width: 1080px) {
   body {
     -webkit-flex-flow: column wrap;
@@ -106,19 +105,13 @@ Tablet and Desktop Devices: 480 pixels to 1080 pixels
   blockquote, blockquote > .prices, img.size1, img.size2 {
     width: 100%;
   }
-}
 
-/* Set minimum font sizes */
-@media only screen and (max-width: 1080px) {
-  body {
-    font-size: 12px;
-  }
+  
   .nav a {
     font-size: 16px;
   }
-  h1 {
-    font-size: 38px;
-  }
+
+
   h2 {
     font-size: 18px;
   }
@@ -126,6 +119,7 @@ Tablet and Desktop Devices: 480 pixels to 1080 pixels
     font-size: 13px;
   }
 }
+
 
 /*=======================================
 Desktop Devices: Greater than 1080 pixels
@@ -164,5 +158,4 @@ This sets styles for large screens */
     margin-left: 2%;
     margin-right: 2%;
   }
-
 }

@@ -19,8 +19,6 @@ Structural Styles
 ===============*/
 
 html {
-/*  margin: 10px; */
-
   /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
   Since rgb works on legacy browsers where hsl might not, including it first 
   ensures compatibility, but if the browser recognizes hsl, it will use that 
@@ -60,9 +58,7 @@ footer {
 Page Header Styles
 =================*/
 header {
-  /* M2LO15 Apply colors using CSS 
-  This applies the color used for the image background to the header
-  (commented out after title was changed from image to text)
+  /* (commented out after title was changed from image to text)
   background-color: #444444; */
   /* M2LO3 Demonstrate style precedence and inheritance in CSS: precedence
   This font will take precedence over the 'body' font */ 
@@ -72,6 +68,8 @@ header {
 
  h1 {
   font: 6em Harrington;
+    /* M2LO15 Apply colors using CSS 
+  This applies color to the h1 font */
   color: rgb(196, 144, 13);
   /* M4LO5 Demonstrate the use of text or box shadowing: 
   This is adding the shadow to the title at the top of my page. */
@@ -110,18 +108,18 @@ nav.horizontal ul {
 }
 
 nav.horizontal li {
-  font-size: 1.2em;
+  font-size: 1.39em;
   text-decoration: none;
-/*	list-style-type: none; */
   width: 100%;
+
   /* M3LO2 Demonstrate floating elements:
   This starts the unordered list at the left side of the viewport 
   float: left;*/
 }
 
 nav.horizontal li a {
-  color: rgb(219, 161, 15);
-	display: block;
+  display: block;
+  padding: 2px;
 }
 
 nav.horizontal a:link, nav.horizontal a:visited {
@@ -129,9 +127,9 @@ nav.horizontal a:link, nav.horizontal a:visited {
   background-color: black;
   border: solid 3px black;
 }
+
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-class */
 nav.horizontal a:hover, nav.horizontal a:active {
-  color: rgb(219, 161, 15);
   background-color: rgb(55, 49, 68);
   border: solid 3px black;
 }
@@ -152,8 +150,8 @@ Dropdown Nav Styles
   background-color:black;
   font: 16px Harrington;
   width: 100%;
-  font-size: 14px;
-  padding: 3px;
+  font-size: 16px;
+  padding: 9px;
   border: none;
   cursor: pointer;
 }
@@ -178,7 +176,7 @@ Dropdown Nav Styles
   text-align: center;
   color: rgb(219, 161, 15);
   font-size: 16px;
-  padding: 8px;
+  padding: 9px;
   text-decoration: none;
   width: 100%;
 }
@@ -214,17 +212,18 @@ ol {
 Text Element Styles 
 =================*/
 h2 {
-    font-size: 2em;
+    font-size: 2.1em;
     font-weight: normal;
     color: silver;
     padding: 10px 20px 10px 20px;
 }  
 
-h2 {
+h3 {
   font-size: 2em;
   font-weight: normal;
   color: silver;
-  padding: 10px 20px 10px 20px;
+  padding: 10px;
+  margin-left: 2.1%;
 }  
     
 /* M2LO7 Demonstrate a CSS attribute selector other than class or id */
@@ -236,30 +235,16 @@ p {
 }
 
 blockquote {
-  /*display: block;*/
   color: lightsteelblue;
   font-size: 1.2em;
   display: -webkit-flex;
-/*
-  display: flex; */
   flex-shrink: 3;  
   padding: 5px 20px 5px 20px;
-  /*
-  border: solid 4px rgb(28, 28, 34);
-  /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
-  /*
-  border-radius: 8px;
   /* M3LO8B Demonstrate relative positioning: 
   This positions the left side of blockquotes 10px away from the left side of the viewport */
   position: relative;
   top: 4px; 
-
-
 }
-/*
-div.flexContainer blockquote {
-  display: flex;
-}*/
 
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector: pseudo-element */
 blockquote::first-letter {
@@ -267,11 +252,6 @@ blockquote::first-letter {
 }
 
 .prices {
-/*  display: block;
-  color: lightsteelblue;
-  font-size: 1.2em;
-  flex-shrink: 3;  
-  padding: 5px 10px 5px 10px; */
   min-width: 25%;
 }
 
@@ -284,6 +264,7 @@ blockquote::first-letter {
   font-size: 14px;
   padding: 3px;
   border: 3px solid rgb(128, 127, 127);
+  /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
@@ -307,9 +288,7 @@ figure {
 Images are displayed as flex items. Flex-shrink is used here. */
 img {
   display: -webkit-flex;
-  display: block;
   flex-shrink: 1;
-/*  align-content: space-between; */
   width: 100%;
   border: hidden 4px rgb(52, 50, 63);
   border-radius: 10px;
@@ -318,7 +297,6 @@ img {
 
 img.size1 {
   width: 35%;
-  min-width: 400px;
 }
 
 img.size2 {
