@@ -15,33 +15,32 @@ Table Styles
 These table styles keep to the theme of the page, but 
 make the table distinct from other content. */ 
 table {
-  background: black;
   border: 5px ridge darkgray;
   padding: 20px;
-  width: 100%;
+  width: 45%;
+  background-image: linear-gradient(to bottom right, rgb(28, 28, 34), rgb(52, 50, 63)); 
 }
 
 th, td {
+  font-size: 0.9em;
   border:3px solid gray;
-  line-height: 1.4em;
+  line-height: 1.2em;
   padding: 8px;
 }
 
 th {
-  background: black;
-  color: rgb(196, 144, 13);
+  color: silver;
   font-weight: normal;
 }
 
 td {
   color: lightsteelblue;
-  font-size: 0.9em;
+  font-size: 0.7em;
   vertical-align: top;
 }
 
 caption {
-    color: rgb(196, 144, 13);
-    background-color: black;
+    color: silver;
     border: 5px ridge darkgray;
     border-bottom: none;
     font-size: 1.3em;
@@ -52,7 +51,7 @@ caption {
 Column Styles 
 ===========*/
 #firstCol {
-  width: 24%;
+  width: 25%;
 }
 
 .dataCols {
@@ -67,5 +66,5 @@ thead tr {
 }
 
 thead tr:first-of-type th:first-of-type {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }

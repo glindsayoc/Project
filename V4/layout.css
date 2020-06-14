@@ -129,7 +129,7 @@ This sets styles for large screens */
 @media only screen and (min-width: 1081px) {
   body {
     -webkit-flex-flow: row nowrap;
-    -moz-flex-flow: row nowrap;
+  /*  -moz-flex-flow: row nowrap; */
     flex-flow: row nowrap;
   }
   nav.vertical {

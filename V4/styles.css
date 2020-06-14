@@ -40,6 +40,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
   line-height: 1.2;
+
 }
 
 footer {
@@ -75,7 +76,7 @@ header {
   This is adding the shadow to the title at the top of my page. */
   text-shadow: -4px 3px 1px #000000;
   /* background: url(img/Driftwood1.jpg) 100%/cover local; */
-  padding: 0px 0px 15px 0px;
+  padding: 20px 0px 15px 0px;
   text-align: center;
   width: 100%;
 }
@@ -98,7 +99,7 @@ footer div > a {
 }
 
 nav.horizontal {
-  height: auto;
+
   width: 100%;
 }
 
@@ -108,7 +109,7 @@ nav.horizontal ul {
 }
 
 nav.horizontal li {
-  font-size: 1.39em;
+  font-size: 1.35em;
   text-decoration: none;
   width: 100%;
 
@@ -201,8 +202,10 @@ List Styles
 ol {
   list-style-type: decimal;
   color: silver;
-  padding: 10px;    
-  padding-left: 30px;
+  font-size: 1.2em;
+  padding: 10px 30px 10px 30px;    
+  border: 3px solid rgb(28, 28, 34);
+  border-radius: 9px;
   overflow: hidden;
   /* M4LO4 Demonstrate the use of gradients */
   background-image: linear-gradient(to bottom right, #082e1c, rgb(15, 99, 50)); 
@@ -232,6 +235,10 @@ p {
   padding: 10px;
   font-size: 1.3em;
   text-align: left
+}
+
+p > a {
+  color: steelblue;
 }
 
 blockquote {
@@ -281,26 +288,42 @@ figure {
   display: -webkit-flex;
   display: flex;
   flex-basis: 33%;
+  /* M5LO6 Demonstrate use of properties of flexbox items
+  Figures are displayed as flex items. Flex-shrink is used here. */
   flex-shrink: 1;
-  border: solid 4px black;
+  border: solid 4px rgb(28, 28, 34);
+  margin-left: auto;
+  margin-right: 0px;
+  width: 47.5%;
 }
-/* M5LO6 Demonstrate use of properties of flexbox items
-Images are displayed as flex items. Flex-shrink is used here. */
+
+video {
+  width: 25%;
+}
+
 img {
   display: -webkit-flex;
-  flex-shrink: 1;
-  width: 100%;
+  display: flex;
+  flex: ;
   border: hidden 4px rgb(52, 50, 63);
   border-radius: 10px;
   object-fit: contain;
 }
 
-img.size1 {
+.size1 {
   width: 35%;
 }
 
-img.size2 {
+.size2 {
   width: 65%;
+}
+
+.size3 {
+  width: 25%;
+}
+
+.size4 {
+  width: 50%;
 }
 
 /* M4LO6 Demonstrate the use of opacity/transparency for images
@@ -327,6 +350,10 @@ This flips any images I've tagged with id="flipH, on the Y axis */
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+
+#knocker {
+  max-height: 400px;
 }
 
 /*=========
