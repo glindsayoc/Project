@@ -48,33 +48,34 @@
          <h2 style="text-align:center">Order Form</h2>
          <p>Required Items (*)</p>
 
-         <form action="" method="POST" >
-
-
-         <label for="orderType">Order Type</label>
-         <input name="type" id="orderType" type="text" list="typeList" />
-         <datalist id="typeList">
-         <option value="Stock Item" >
-         <option value="Custom" >
-         </datalist>
-
-         <label for="fnBox">First Name*</label>
-         <input name="firstName" id="fnBox" type="text" required />
-         <label for="lnBox">Last Name*</label>
-         <input name="lastName" id="lnBox" type="text" required />
-         <label for="addBox">Address*</label>
-         <textarea name="address" id="addBox" type="text" required></textarea>
-         <label for="mailBox">E-mail*</label>
-         <input name="email" id="mailBox" type="email" required />
-         <label for="phoneBox">Phone Number*</label>
-         <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required placeholder="(nnn) nnn-nnnn" />
-         <label for="itemBox">Item Description*</label>
-         <textarea name="item" id="itemBox" type="text" required></textarea>
-
-         <p><input type="submit" value="Submit Order" /></p>
+         <form>
+            <label for="orderType">Order Type</label>
+            <!-- M7LO8 Demonstrate the use of a selection list in a form -->
+            <input name="type" id="orderType" type="text" list="typeList" />
+            <datalist id="typeList">
+               <option value="Stock Item">
+               <option value="Custom">
+            </datalist>
+            <label for="fnBox">First Name*</label>
+            <!-- M7LO5 Demonstrate the use of a text box in a form -->
+            <input name="firstName" id="fnBox" type="text" required />
+            <label for="lnBox">Last Name*</label>
+            <input name="lastName" id="lnBox" type="text" required />
+            <label for="addBox">Address*</label>
+            <!-- M7LO9 Demonstrate the use of a text area in a form -->
+            <textarea name="address" id="addBox" type="text" required></textarea>
+            <label for="mailBox">E-mail*</label>
+            <input name="email" id="mailBox" type="email" required />
+            <label for="phoneBox">Phone Number*</label>
+            <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required placeholder="(nnn) nnn-nnnn" />
+            <label for="itemBox">Item Description*</label>
+            <textarea name="item" id="itemBox" type="text" required></textarea>
+            <p>
+               <!--M7LO10 Demonstrate the use of a submit button in a form  -->
+               <input type="submit" value="Submit Order" />
+            </p>
          </form>
 
       </section>
-
    </body>
 </html>

@@ -298,8 +298,29 @@ figure {
   width: 47.5%;
 }
 
+/* =========
+Media Styles
+==========*/
+
 video {
-  width: 25%;
+  display: -webkit-flex;
+  display: flex; 
+  flex: 1 1 auto;
+  /* M8LO10 Demonstrate a CSS animation or transition
+  This sets the values for transition of the player width and position 
+  (triggered by hovering over the player). */
+  transition: width 10s, position 10s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+video:hover {
+  /* M8LO12 Demonstrate how to format media with CSS
+  This sets the width of the player */
+  width: 100%;
+  position: relative;
+  bottom: 20%;
+  right: 5%;
 }
 
 img {
@@ -320,12 +341,20 @@ img {
 }
 
 .size3 {
-  width: 25%;
+  width: 19%;
 }
 
 .size4 {
-  width: 50%;
+  width: 45%;
 }
+
+.flexContainer > a[href$=".html"] {
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 1 auto;
+    border: hidden 4px rgb(52, 50, 63);
+    border-radius: 10px;
+  }
 
 /* M4LO6 Demonstrate the use of opacity/transparency for images
 img:hover {

@@ -61,7 +61,7 @@ This sets styles for mobile screens */
     margin-right: 2%;
     border: 3px solid black;
   }
-  blockquote, blockquote > .prices, img.size1, img.size2 {
+  blockquote, blockquote > .prices, .size1, .size2, .size3, .size4 {
     width: 100%;
   }
 }
@@ -102,16 +102,12 @@ Tablet Devices: 480 pixels to 1080 pixels
     margin-right: auto;
     border: 3px solid black;
   }
-  blockquote, blockquote > .prices, img.size1, img.size2 {
+  blockquote, blockquote > .prices, .size1, .size2, .size3, .size4 {
     width: 100%;
   }
-
-  
   .nav a {
     font-size: 16px;
   }
-
-
   h2 {
     font-size: 18px;
   }
