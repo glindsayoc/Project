@@ -102,7 +102,7 @@ Tablet Devices: 480 pixels to 1080 pixels
     margin-right: auto;
     border: 3px solid black;
   }
-  blockquote, blockquote > .prices, .size1, .size2, .size3, .size4 {
+  blockquote, blockquote > .prices, .size1, .size2, .size3, .size4, ol, figure {
     width: 100%;
   }
   .nav a {
