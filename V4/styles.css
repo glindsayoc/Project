@@ -262,20 +262,25 @@ blockquote::first-letter {
   min-width: 25%;
 }
 
-.orderButton {  
+.orderButton > p {  
   display: block;
   color: rgb(219, 161, 15);
   background-color: black;
+  text-align: center;
+  text-decoration: none;
   width: 64px;
   height: 28px;
   font-size: 14px;
   padding: 3px;
   border: 3px solid rgb(128, 127, 127);
-  /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
-  border-radius: 5px;
-  margin: 5px;
-  cursor: pointer;
+  border-radius: 7px;
+  margin: 6px;
   float: right;
+}
+.flexContainer > a[href$=".html"] {
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
 }
 
 /* M2LO6  Demonstrate a CSS id and a CSS class selector: CSS class */
@@ -292,6 +297,7 @@ figure {
   Figures are displayed as flex items. Flex-shrink is used here. */
   flex-shrink: 1;
   border: ridge 4px darkgrey;
+  /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
   border-radius: 9px;
   margin-left: auto;
   margin-right: 0px;
@@ -347,14 +353,6 @@ img {
 .size4 {
   width: 45%;
 }
-
-.flexContainer > a[href$=".html"] {
-    display: -webkit-flex;
-    display: flex;
-    flex: 1 1 auto;
-    border: hidden 4px rgb(52, 50, 63);
-    border-radius: 10px;
-  }
 
 /* M4LO6 Demonstrate the use of opacity/transparency for images
 img:hover {
