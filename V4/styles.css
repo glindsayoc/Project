@@ -325,7 +325,7 @@ video:hover {
   This sets the width of the player */
   width: 50%;
   position: relative;
-  bottom: 20%;
+  top: 50%;
   right: 5%;
 }
 
