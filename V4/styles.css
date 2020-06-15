@@ -315,7 +315,7 @@ video {
   /* M8LO10 Demonstrate a CSS animation or transition
   This sets the values for transition of the player width and position 
   (triggered by hovering over the player). */
-  transition: width 10s, position 10s;
+  transition: width 2s, position 2s;
   transition-delay: 0.5s;
   transition-timing-function: ease-out;
 }
@@ -323,7 +323,7 @@ video {
 video:hover {
   /* M8LO12 Demonstrate how to format media with CSS
   This sets the width of the player */
-  width: 100%;
+  width: 50%;
   position: relative;
   bottom: 20%;
   right: 5%;
