@@ -19,12 +19,12 @@ table {
   border-top: ridge 5px darkgray;
   padding: 20px;
   padding-right: 0px;
-  width: 45%;
+  width: 100%;
   background-image: linear-gradient(to bottom right, rgb(28, 28, 34), rgb(52, 50, 63)); 
 }
 
 th, td {
-  font-size: 0.9em;
+  font-size: 0.8em;
   border: solid 3px gray;
   line-height: 1.2em;
   padding: 8px;
@@ -43,7 +43,6 @@ td {
 
 caption {
     color: silver;
-
     border-bottom: none;
     font-size: 1.3em;
     padding: 4px 0px 5px 0px;
