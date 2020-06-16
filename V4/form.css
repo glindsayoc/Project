@@ -29,8 +29,8 @@ label {
  }
  
  input, select, textarea {
-  background-color: rgb(211, 211, 208);
   display: block;
+  background-color: rgb(211, 211, 208);
   float: left;
   margin: 5px 0px;
   width: 55%;
@@ -54,7 +54,5 @@ label {
     display: inline;
     font-size: 1.1em;
     margin-left: 17%;
- /*   height: 30px;
-    width: 150px; */
  }
 
